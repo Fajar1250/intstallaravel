@@ -1,0 +1,93 @@
+
+C:\laragon\www
+λ composer --version
+Composer version 2.4.1 2022-08-20 11:44:50
+
+C:\laragon\www
+λ composer create-projcect --prefer-dist laravel/laravel kelase
+
+
+Command "create-projcect" is not defined.
+
+
+ Do you want to run "create-project" instead?  (yes/no) [no]:
+ > no
+
+
+C:\laragon\www
+λ composer create-project --prefer-dist laravel/laravel kelase
+Creating a "laravel/laravel" project at "./kelase"
+
+In CreateProjectCommand.php line 371:
+
+  Project directory "C:\laragon\www\kelase" is not empty.
+
+
+create-project [-s|--stability STABILITY] [--prefer-source] [--prefer-dist] [--prefer-install PREFER-INSTALL] [--repository REPOSITORY] [--repository-url REPOSITORY-URL] [--add-repository] [--dev] [--no-dev] [--no-custom-installers] [--no-scripts] [--no-progress] [--no-secure-http] [--keep-vcs] [--remove-vcs] [--no-install] [--no-audit] [--audit-format AUDIT-FORMAT] [--ignore-platform-req IGNORE-PLATFORM-REQ] [--ignore-platform-reqs] [--ask] [--] [<package> [<directory> [<version>]]]
+
+
+C:\laragon\www
+λ php artisan serve
+Could not open input file: artisan
+
+C:\laragon\www
+λ
+
+C:\laragon\www
+λ cd pelatihan
+The system cannot find the path specified.
+
+C:\laragon\www
+λ php artisan serve
+Could not open input file: artisan
+
+C:\laragon\www
+λ
+
+C:\laragon\www
+λ cd kelase
+
+C:\laragon\www\kelase
+λ php artisan serve
+
+   INFO  Server running on [http://127.0.0.1:8000].
+
+  Press Ctrl+C to stop the server
+
+  2025-04-11 15:27:46 ...................................................................................................................................................................................... ~ 5s
+  2025-04-11 15:27:51 ...................................................................................................................................................................................... ~ 0s
+  2025-04-11 15:27:52 /favicon.ico ......................................................................................................................................................................... ~ 0s
+  2025-04-11 15:29:37 ...................................................................................................................................................................................... ~ 0s
+  2025-04-11 15:29:37 /favicon.ico ......................................................................................................................................................................... ~ 1s
+^C
+C:\laragon\www\kelase
+λ php artisan make:migration create_posts_tabel --create=bank_accounts
+
+   INFO  Migration [C:\laragon\www\kelase\database\migrations/2025_04_11_084658_create_posts_tabel.php] created successfully.
+
+
+C:\laragon\www\kelase
+λ php artisan make:migration hotel --create hotel
+
+   INFO  Migration [C:\laragon\www\kelase\database\migrations/2025_04_11_085048_hotel.php] created successfully.
+
+
+C:\laragon\www\kelase
+λ php artisan migrate
+
+   INFO  Preparing database.
+
+  Creating migration table .............................................................................................................. 164ms DONE
+
+   INFO  Running migrations.
+
+  2014_10_12_000000_create_users_table .................................................................................................. 148ms DONE
+  2014_10_12_100000_create_password_reset_tokens_table ................................................................................... 20ms DONE
+  2019_08_19_000000_create_failed_jobs_table ............................................................................................ 103ms DONE
+  2019_12_14_000001_create_personal_access_tokens_table .................................................................................. 59ms DONE
+  2025_04_11_084658_create_posts_tabel ................................................................................................... 13ms DONE
+  2025_04_11_085048_hotel ................................................................................................................ 58ms DONE
+
+
+C:\laragon\www\kelase
+λ
